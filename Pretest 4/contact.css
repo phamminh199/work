@@ -1,0 +1,38 @@
+.form{
+    margin-left: 5px;
+    width: 35%;
+    border: 2px;
+    text-align: left;
+}
+.form legend{
+    font-size: 20px;
+}
+.form label{
+    display: inline-block;
+    padding: 5px;
+}
+h2{
+    color: red;
+    margin-left: 200px;
+    text-shadow: 3px 3px 3px rgba(199, 182, 182, 0.986);
+}
+.submit{
+    background-color: blue;
+    border-radius: 12px;
+    color: cornsilk;
+    padding: 5px 10px 5px 10px;
+}
+.reset{
+    background-color: blue;
+    border-radius: 12px;
+    color: cornsilk;
+    padding: 5px 10px 5px 10px;
+}
+.details{
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.review{
+    margin-top: 20px;
+    padding-top: 10px;
+}
