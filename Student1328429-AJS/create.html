@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Add New Name</h3>
+            <form name="myForm" ng-submit="addName();">
+                <div>
+                    <label for="">Name</label><br>
+                    <input type="text" name="name" ng-model="name" required pattern="[a-z A-Z]{3,20}">
+                    <span class="error" ng-show="myForm.name.$error.required" style="color: red;"> Username is Required.</span>
+                </div>
+                <div>
+                    <label for="">Deparment</label><br>
+                    <input type="text" name="deparment" ng-model="deparment" required pattern="[a-z A-Z]{2,20}">
+                    <span class="error" ng-show="myForm.deparment.$error.required" style="color: red;"> Deparment is Required.</span>
+                </div>
+                <div>
+                    <label for="">Email</label><br>
+                    <input type="email" name="email" ng-model="email" required pattern="[a-z0-9A-Z]{3,}@[a-z]{2,5}.[a-z]{2,5}">
+                    <span class="error" ng-show="myForm.email.$error.required" style="color: red;"> Email is Required.</span>
+                    <span class="error" ng-show="myForm.email.$invalid" style="color: red;">Invalid email address</span>
+                </div>
+                <div>
+                    <div style="padding-top: 10px;">
+                        <button type="submit" ng-disabled="!myForm.$dirty || (myForm.$dirty && myForm.$invalid)">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
